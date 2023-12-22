@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./build/main.css">
+</head>
+<body>
+    <div class="container">
+        <div class="m-3 p-2">
+            <button id="get" class="btn btn-primary">Get</button>
+            <button id="get_id" class="btn btn-primary">Get by id</button>
+            <button id="post" class="btn btn-secondary">Post</button>
+            <button id="put_id" class="btn btn-secondary">Put by id</button>
+            <button id="delete_id" class="btn btn-secondary btn-warning">Delete by id</button>
+        </div>
+        <div class="row m-2">
+            <div class="col-6 ">
+                <label for="todo_text" class="form-label">Todo text</label>
+                <input type="text" class="form-control" id="todo_text">
+            </div>
+            <div class="col-6">
+                <label for="todo_id" class="form-label">Todo id</label>
+                <input type="text" class="form-control" id="todo_id">
+            </div>
+        </div>
+        <div class="row m-2">
+            <div class="col-6">
+                <div style="background: #fff" class="p2 m2">
+                    <label class="form-label p-2">Global data</label>
+                    <pre id="response1"></pre>
+                </div>
+            </div>
+            <div class="col-6">
+                <div style="background: #fff" class="p2 m2">
+                    <label class="form-label p-2">Id data</label>
+                    <pre id="response2"></pre>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./build/app.js"></script>
+</body>
+</html>
